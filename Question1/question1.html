@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qusetion1</title>
+</head>
+<body>
+    <script>
+
+        // Ask user to enter numbers separated by commas
+        var inputString = window.prompt("Enter numbers separated by commas:");
+
+        // Split the input string into an array of individual numbers
+        var numbersArray = inputString.split(",");
+
+        // variable to store sum
+        var sum = 0;
+
+        // Loop through each number in the array and add it to the sum
+        for (var i = 0; i < numbersArray.length; i++) {
+            sum += Number(numbersArray[i]); // Convert string to number
+        }
+
+        alert( 'The sum is ' + sum); 
+
+    </script>
+</body>
+</html>
